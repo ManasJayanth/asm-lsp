@@ -1,0 +1,17 @@
+{
+  "name": "esy-asm-lsp",
+  "version": "0.6.0",
+  "description": "asm-lsp packaged for esy",
+  "source": "https://github.com/bergercookie/asm-lsp/archive/refs/tags/v0.6.0.tar.gz#sha256:71348b181f77fbd0005bd6abbdfd793816cb581541a17e6ccd8714e0fcb7e755",
+  "override": {
+    "buildsInSource": true,
+    "build": [["cargo", "build", "--release"]],
+    "install": "cp ./target/release/asm-lsp #{self.bin}",
+    "dependencies": {
+      "esy-rustup": "^1.56.1"
+    },
+    "resolutions": {
+      "esy-rustup": "esy-packages/esy-rustup:esy.json#bd83f59efa55da39ba49b155d867e8ae55e3df14"
+    }
+  }
+}

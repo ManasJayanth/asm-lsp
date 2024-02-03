@@ -1,0 +1,11 @@
+{
+  "esy": {
+    "build": "which asm-lsp"
+  },
+  "dependencies": {
+    "esy-asm-lsp": "*"
+  },
+  "resolutions": {
+    "esy-rustup": "esy-packages/esy-rustup:esy.json#bd83f59efa55da39ba49b155d867e8ae55e3df14"
+  }
+}
